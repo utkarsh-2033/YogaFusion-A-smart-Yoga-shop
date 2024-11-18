@@ -1,4 +1,4 @@
-import ProductCard from "@/components/Product/ProductCard";
+import Image from "next/image";
 
 const ProductDetail = ({ product }) => {
   const addtocartHandler = async () => {
@@ -26,7 +26,7 @@ const ProductDetail = ({ product }) => {
     <div className="bg-gray-100 min-h-screen py-16 flex flex-col items-center">
       <div className="w-full max-w-4xl bg-white rounded-lg shadow-lg overflow-hidden md:flex md:items-center">
         <div className="md:w-1/2">
-          <img
+          <Image
             src={product.image || "/default-image.jpg"}
             alt={product.name || "Product Image"}
             className="w-full h-full object-cover"

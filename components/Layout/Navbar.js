@@ -1,4 +1,5 @@
-import Link from "next/link";
+import Link  from "next/link";
+import Image from "next/image";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import {
@@ -59,9 +60,11 @@ const Navbar = () => {
           <div className="flex space-x-4">
             <div>
               <Link href="/" className="flex items-center py-5 px-2 text-white">
-                <img
+                <Image
                   src="/assets/logo.jpg"
                   alt="YogaFusion"
+                  width={32} // Specify width
+                  height={32} 
                   className="h-8 w-8 mr-2"
                 />
                 <span className="font-bold">YogaFusion</span>

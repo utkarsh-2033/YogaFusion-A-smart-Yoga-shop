@@ -89,7 +89,7 @@ const LoginForm = ({ type }) => {
       <p className="text-center text-gray-600 mt-4">
         {isLogin ? (
           <>
-            Don't have an account?{" "}
+            Don&apost have an account?{" "}
             <Link href="/signup" className="text-blue-500">
               Sign up
             </Link>

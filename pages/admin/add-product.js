@@ -18,8 +18,9 @@ const AddProduct = () => {
       }
       return true;
     };
-
+    
     const fetchProduct = async () => {
+      if (!productId) return; 
       try {
         const res = await fetch(`/api/product/${productId}`);
         if (!res.ok) {

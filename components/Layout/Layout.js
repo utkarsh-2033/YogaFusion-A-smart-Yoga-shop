@@ -2,7 +2,7 @@ import Navbar from './Navbar';
 import Footer from './Footer';
 import styles from './Layout.module.css';
 
-export default function Layout({ children }) {
+ const Layout=({ children })=> {
   return (
     <div>
       <Navbar />
@@ -19,3 +19,6 @@ export default function Layout({ children }) {
     </div>
   );
 }
+
+
+export default Layout;
