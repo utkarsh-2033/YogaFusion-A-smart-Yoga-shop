@@ -56,8 +56,9 @@ const ManageProducts = ({ products }) => {
 };
 
 export async function getServerSideProps() {
-  try {
-    const res = await fetch("http://localhost:3000/api/product");
+  const baseUrl=process.env.BASE_URL;
+  try{
+    const res = await fetch(`${baseUrl ? baseUrl : 'http://localhost:3000'}/api/product`);
     const data = await res.json();
     const products = data.data;
     return { props: { products } };
