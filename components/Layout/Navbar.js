@@ -80,12 +80,12 @@ const Navbar = () => {
               <Link href="/blogs" className={getLinkClass("/blogs")}>
                 <FaBlog className="mr-1" /> Blog
               </Link>
-              <Link
+              {/* <Link
                 href="/instagram-feed"
                 className={getLinkClass("/instagram-feed")}
               >
                 <FaInstagram className="mr-1" /> Instagram Feed
-              </Link>
+              </Link> */}
               {isLoggedIn  && (
                 <Link href="/cart" className={getLinkClass("/cart")}>
                   <FaShoppingCart className="mr-1" /> Cart
@@ -180,12 +180,12 @@ const Navbar = () => {
         >
           <FaBlog className="mr-1" /> Blog
         </Link>
-        <Link
+        {/* <Link
           href="/instagram-feed"
           className="py-2 px-4 text-sm text-white flex items-center hover:bg-gray-700 rounded-lg transition duration-200"
         >
           <FaInstagram className="mr-1" /> Instagram Feed
-        </Link>
+        </Link> */}
         {isLoggedIn && (
           <Link
             href="/cart"
